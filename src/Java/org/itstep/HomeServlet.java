@@ -17,12 +17,11 @@ public class HomeServlet extends HttpServlet {
         String a=req.getParameter("a");
         String b=req.getParameter("b");
         String op=req.getParameter("op");
-        System.out.println("a"+a+"b"+b+"operat"+op);
+        
         switch (op){
             case "add": int aInt = Integer.parseInt(a);
-                int bInt = Integer.parseInt(b);
-                System.out.println(aInt+bInt);
-                writer.println(aInt + bInt);
+                         int bInt = Integer.parseInt(b);
+                         writer.println(aInt + bInt);
         }
     }
 }
